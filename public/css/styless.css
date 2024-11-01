@@ -1,0 +1,857 @@
+body {
+    font-family: cursive;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col-12,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2 {
+    padding: 0 15px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-8 {
+    width: calc(100% * (8/12));
+}
+
+.col-7 {
+    width: calc(100% * (7/12));
+}
+
+.col-6 {
+    width: calc(100% * (6/12));
+}
+
+.col-5 {
+    width: calc(100% * (5/12));
+}
+
+.col-4 {
+    width: calc(100% * (4/12));
+}
+
+.col-3 {
+    width: calc(100% * (3/12));
+}
+
+.col-2 {
+    width: calc(100% * (2/12));
+}
+
+header {
+    padding: 8px 25px;
+}
+
+header ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 5px;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 7px;
+}
+
+header .logo {
+    text-align: left;
+    padding-top: 10px;
+}
+
+header .icons {
+    text-align: right;
+}
+
+header .icons a {
+    color: black;
+    text-decoration: none;
+}
+
+header .icons a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+header .icons i {
+    padding: 20px 10px 0 10px;
+    font-size: 18px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .logoo {
+    font-size: 25px;
+    color: #3e4684;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+
+header .logo h1 {
+    display: inline;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    color: #BC6C25;
+}
+
+footer .logo,
+header .logoo {
+    font-size: 25px;
+    color: #BC6C25;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+
+footer ul {
+    list-style: none;
+    color: white;
+}
+
+footer h2 {
+    display: inline;
+    color: white;
+}
+
+footer td i {
+    font-size: 16px;
+    margin-right: 7px;
+    padding-top: 3px;
+}
+
+footer .col-4:nth-child(2) {
+    padding-top: 30px;
+}
+
+footer table {
+    padding-left: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 150px;
+    /* تحديد ارتفاع ثابت للصورة */
+    object-fit: contain;
+    /* يجعل الصورة تتناسب مع المساحة المحددة */
+}
+
+.product-item .wishlist-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(197, 15, 15);
+    margin-top: 10px;
+    text-align: right;
+}
+
+.wishlist-icon {
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 50px;
+    padding: 0px 10px;
+    color: rgb(197, 15, 15);
+}
+
+#wishlistLink {
+    position: relative;
+}
+
+#wishlistCount {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: rgb(197, 15, 15);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: none;
+}
+
+#wishlistCount:not(:empty) {
+    display: inline;
+}
+
+#cartLink {
+    position: relative;
+}
+
+#cartCount {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: rgb(197, 15, 15);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: none;
+}
+
+#cartCount:not(:empty) {
+    display: inline;
+}
+
+#orderList {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.order {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order h3 {
+    color: #333;
+}
+
+.order p {
+    margin: 5px 0;
+}
+
+.order h4 {
+    margin-top: 15px;
+    color: #555;
+}
+
+.order ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order li {
+    margin-bottom: 5px;
+}
+
+.order p strong {
+    font-weight: bold;
+    color: #444;
+}
+
+#search-form {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#search-form input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#search-form input:focus {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+
+/* Cart CSS */
+
+.tprice {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tprice p {
+    font-size: 18px;
+}
+
+.tprice button {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    margin-bottom: 10px;
+}
+
+.quantity-price span {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(197, 15, 15);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-image {
+    max-height: 100px;
+    margin: 0 auto;
+    float: center;
+}
+
+#checkoutButton {
+    background-color: #e4d1bf;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#cartItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-summary {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/*css login*/
+
+.body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b17e51;
+    height: 100vh;
+    margin-top: 110px;
+}
+
+.screen-1 {
+    background: rgb(216, 181, 150);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #e9ba91;
+    gap: 2em;
+}
+
+.screen-1 .logo2 {
+    margin-top: 110px;
+}
+
+.screen-1 form {
+    margin-top: -70px;
+}
+
+.screen-1 .email {
+    background: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+}
+
+.screen-1 .email input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .email input::-moz-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .email input:-ms-input-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .email input::placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.8em;
+}
+
+.screen-1 .email ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+    background: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+}
+
+.screen-1 .password input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .password input::-moz-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .password input::placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .password ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+    margin-right: -5em;
+}
+
+.screen-1 .name {
+    background: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.screen-1 .name input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .name input::-moz-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .name input:-ms-input-placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.screen-1 .name input::placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 0.9em;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.screen-1 .footer {
+    display: flex;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.screen-1 .footer span {
+    cursor: pointer;
+}
+
+.screen-1 .footer a:hover {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* Base styles for the product item */
+
+.product-item {
+    border: 1px solid #ccc;
+    /* Optional: for visual separation */
+    border-radius: 5px;
+    /* Optional: for rounded corners */
+    padding: 10px;
+    margin: 10px;
+    /* Space between items */
+    text-align: center;
+    /* Center the text */
+    height: auto;
+}
+
+
+/* Responsive grid layout */
+
+#wishlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for large screens */
+    gap: 20px;
+    /* Space between grid items */
+}
+
+
+/* Responsive breakpoints */
+
+@media (max-width: 1200px) {
+    #wishlist {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #wishlist {
+        grid-template-columns: 1fr;
+        /* 1 column for small screens */
+    }
+}
+
+
+/* Styles for old price */
+
+.old-price {
+    color: gray;
+    /* Change the color to gray */
+    text-decoration: line-through;
+    /* Optional: strike-through for old price */
+}
+
+
+/* about && contact us*/
+
+#about {
+    padding: 0px 0;
+    background-color: #e4d1bf;
+    margin-top: 30px;
+}
+
+#about .container {
+    text-align: center;
+    justify-content: center;
+}
+
+#about img {
+    width: 100%;
+    margin-right: -50px;
+}
+
+#about .paragraph {
+    color: gray;
+}
+
+.aboutDiv {
+    padding-top: 50px;
+}
+
+.aboutDiv i {
+    font-size: 30px;
+    color: #528365;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+
+.aboutDiv h2 {
+    display: inline;
+}
+
+.aboutDiv p {
+    margin: 0 auto;
+    color: gray;
+    width: 80%;
+}
+
+.aboutDiv .btnAbout {
+    margin-top: 20px;
+    text-align: center;
+    padding: 12px;
+    background-color: #fff5ed;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: #e4d1be 0px 20px 30px -10px;
+}
+
+.aboutDiv .btnAbout:hover {
+    background-color: #f5e9dc;
+    transition: all 0.5s;
+}
+
+#contact form input,
+textarea {
+    display: block;
+}
+
+#contact form input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#contact form button {
+    margin-top: 40px;
+    text-align: center;
+    padding: 12px;
+    background-color: #e4d1bf;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: #e4d1be 0px 20px 30px -10px;
+    width: 100%;
+}
+
+#contact form button:hover {
+    background-color: #f5e9dc;
+    transition: all 0.5s;
+}
+
+#contact .col-10 {
+    border: 1px solid black;
+    border-right: none;
+    padding: 70px 30px;
+    z-index: 1;
+}
+
+#contact .col-4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#contact .col-4 div:nth-child(2) {
+    padding-top: 10px;
+}
+
+#contact .icons {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact .icons i {
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact h2 {
+    padding-left: 10px;
+}
+
+.imgContact {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/We\ scale\ DTC\ brands\ 🚀.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.transparent-btn {
+    background: none;
+    /* Removes background */
+    border: none;
+    /* Removes border */
+    padding: 0;
+    /* Removes padding */
+    font: inherit;
+    /* Inherits font style from parent */
+    color: inherit;
+    /* Keeps original text color */
+    cursor: pointer;
+    /* Changes cursor to pointer */
+    text-decoration: none;
+    /* Ensures no underline */
+    display: inline;
+    /* Ensures the button behaves like an inline element */
+}
+
+.transparent-btn i {
+    margin-right: 0.5em;
+    /* Adjust icon spacing if needed */
+}
+
+.transparent-btn:hover {
+    color: inherit;
+    /* Keeps the text color unchanged on hover */
+    text-decoration: none;
+    /* Ensures no underline on hover */
+}
+
+.transparent-btn:focus {
+    outline: none;
+    /* Removes focus outline */
+}
